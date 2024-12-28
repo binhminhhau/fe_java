@@ -1,0 +1,134 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập body và html chiều cao */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Phần chính */
+main {
+    flex: 1; /* Chiếm toàn bộ khoảng trống giữa header và footer */
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a3bb5;
+    color: white;
+    padding: 20px 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các nút trong nav-links */
+}
+
+.logout-btn {
+    margin-left: auto;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+header .logo span {
+    color: yellow;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Cart Section */
+.cart h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Form Đơn nhận */
+.order h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer luôn nằm ở cuối */
+footer {
+    background-color: #2a3bb5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}

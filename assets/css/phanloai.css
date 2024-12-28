@@ -1,0 +1,140 @@
+/* Reset cơ bản */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a3bb5;
+    color: white;
+    padding: 20px 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các nút trong nav-links */
+}
+
+.logout-btn {
+    margin-left: auto;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+header .logo span {
+    color: yellow;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+/* Container */
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px); /* Đảm bảo footer luôn ở dưới */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #0033cc;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #000;
+}
+
+/* Product List */
+.product-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.product-row img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-info h3 {
+    margin: 0;
+    color: #0033cc;
+    font-size: 18px;
+}
+
+.product-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #0033cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

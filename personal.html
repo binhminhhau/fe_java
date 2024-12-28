@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giatot Registration</title>
+    <link rel="stylesheet" href="./assets/css/personal.css">
+    
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">GIATOT<span>COM</span></div>
+        <nav>
+            <div class="nav-links">
+                <a href="home.html">Trang chủ</a>
+                
+            </nav>
+            </div>
+            <a href="logout.html" class="logout-btn">Đăng xuất</a>
+        
+  </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="cart-icon">
+            <img src="https://via.placeholder.com/100?text=Cart" alt="Cart Icon">
+        </div>
+        <div class="form-container">
+            <h2>ĐĂNG KÍ GIATOT<span style="color: #FFD700;">COM</span></h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Địa chỉ email / SĐT</label>
+                    <input type="email" id="email" name="email" placeholder="Email / SĐT" required>
+                </div>
+                <div class="form-group password-eye">
+                    <label for="password">Mật khẩu mới</label>
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu mới" required>
+                    <span onclick="togglePasswordVisibility()">👁️</span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <textarea id="address" name="address" placeholder="Địa chỉ" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Đăng Kí</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>

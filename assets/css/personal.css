@@ -1,0 +1,148 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a3bb5;
+    color: white;
+    padding: 20px 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các nút trong nav-links */
+}
+
+.logout-btn {
+    margin-left: auto;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+header .logo span {
+    color: yellow;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Nội dung chính */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cart-icon img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border: 2px solid #2C3EBD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #2C3EBD;
+    margin-bottom: 20px;
+}
+
+.form-container h2 span {
+    color: #FFD700;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-eye {
+    position: relative;
+}
+
+.password-eye span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-group textarea {
+    height: 80px;
+}
+
+.submit-btn {
+    background-color: #2C3EBD;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #1A26A6;
+}
